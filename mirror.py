@@ -203,6 +203,7 @@ class HomeHandler(BaseHandler):
       "latest_urls": latest_urls,
       "secure_url": secure_url,
     }
+    self.response.headers['Strict-Transport-Security'] = 'max-age=31536000'
     self.response.out.write(template.render("main.html", context))
 
 
@@ -260,6 +261,7 @@ class MirrorHandler(BaseHandler):
     if not DEBUG:
       self.response.headers['cache-control'] = \
         'max-age=%d' % EXPIRATION_DELTA_SECONDS
+      self.response.headers['Strict-Transport-Security'] = 'max-age=31536000'
 
     self.response.out.write(content.data)
 
