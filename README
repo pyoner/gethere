@@ -19,7 +19,7 @@ Why?
 ----
 - Get around content filtering
 - Confidential browsing on open wifi or compromised networks
--Security, Privacy, and Performance benefits of hphosts block lists on every device I use
+- Security, Privacy, and Performance benefits of hphosts block lists on every device I use
 Execution
 ---------
 This is a quick fork of the labnol proxy, which in turn is a fork of the mirrorrr project. It's currently in the very early stage but is usable. It runs on Google app engine with Python 2.7
