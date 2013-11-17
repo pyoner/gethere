@@ -16,4 +16,4 @@ handlers:
 
 - url: /.*
   script: mirror.app
-  secure: optional
+  secure: always
